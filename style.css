@@ -1,0 +1,737 @@
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Barlow", sans-serif;
+    }
+    /* Header Section CSS Start  */
+    
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .navbar-nav ul {
+        align-items: center;
+    }
+    
+    .headersection li {
+        list-style: none;
+    }
+    
+    .headerimage {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .circlebox {
+        top: 50%;
+        left: 45%;
+    }
+    
+    .circlebox h1 {
+        margin-top: 60px;
+        margin-left: 50px;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    
+    .circlebox span {
+        margin-left: 65px;
+        color: #9C7C39;
+        font-weight: 700;
+    }
+    
+    .circlebox h6 {
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 10px;
+        color: #9C7C39;
+    }
+    
+    .playvideo {
+        /*	    color: #9C7C39;*/
+        border: none;
+        padding: 5px 10px 5px 10px;
+        background-color: #9C7C39;
+        margin-top: 30px;
+        border-radius: 27px;
+        color: white;
+        margin-left: -1px;
+    }
+    
+    .playvideo i {
+        font-size: 20px;
+        color: black;
+    }
+    
+    .firsticon {
+        font-size: 55px;
+    }
+    
+    .techasthalogo {
+        width: 50px;
+        height: 30px;
+    }
+    
+    .Mehr {
+        color: lightsalmon;
+        padding-top: 10px;
+    }
+    
+    .brownBoxWrap {
+        background-color: #938E86;
+    }
+    
+    .brownBoxText {
+        color: white;
+        padding: 30px 25px;
+    }
+    /* Header Section CSS End  */
+    /* viva colonia section css start  */
+    
+    .Colonia {
+        margin-top: 100px;
+    }
+    
+    .TextHeading p {
+        font-size: 20px;
+    }
+    
+    .TextHeading h1 {
+        /*font-size: 24px;*/
+        margin-top: 50px;
+        font-family: Proxima Nova Thin;
+    }
+    
+    .viva {
+        color: #7D9685;
+        margin-left: -20px;
+        font-family: 'Cedarville Cursive', cursive;
+        /*font-size: 30px;*/
+        font-weight: 700;
+    }
+    
+    .Umgebung-button {
+        border: none;
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: 2px solid #7D9685;
+        color: #7D9685;
+    }
+    /* viva colonia section css End */
+    /* image Section Css Start */
+    
+    .imagesection {
+        margin-top: 90px;
+    }
+    
+    .imagesection img {
+        object-fit: cover;
+        width: 100%;
+        height: 88%;
+    }
+    /* image Section Css End */
+    /* Slider Section Css Start */
+    
+    .greenbackground {
+        background-color: #7D9685;
+        padding-bottom: 50px;
+        width: 100%;
+        height: auto;
+        border: 5px solid;
+        border-color: #7D9685;
+    }
+    
+    span.carousel-control-next-icon {
+        background-color: #9C7C39;
+        border-color: white;
+        color: #9C7C39;
+    }
+    
+    span.carousel-control-prev-icon {
+        background-color: #9C7C39;
+        border-color: white;
+        color: #9C7C39;
+    }
+    
+    .firsticon {
+        color: antiquewhite;
+    }
+    
+    .Wohnungen p {
+        margin-left: -15px;
+    }
+    
+    .Fahrradstellplatze p {
+        margin-left: -15px;
+    }
+    
+    .Wohnungen {
+        margin-right: 45px;
+        font-size: 16px;
+    }
+    
+    .Fahrradstellplatze {
+        margin-right: 20px;
+    }
+    
+    .Tiefgaragenstellplatze {
+        margin-right: 20px;
+    }
+    
+    .fa-bicycle:before {
+        content: "\f206";
+        margin-left: -7px;
+    }
+    
+    .countcenter {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .countcenter .Wohnungen i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    
+    .countcenter .Fahrradstellplatze i {
+        font-size: 24px;
+        margin-left: 7px;
+    }
+    
+    .countcenter .Tiefgaragenstellplatze i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    
+    .countcenter .Denkmaler i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    
+    .Denkmaler {
+        margin-left: 35px;
+    }
+    
+    .count {
+        /*display: flex;*/
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        /*  font-family: verdana;*/
+        float: left;
+        /*margin: 30px;*/
+    }
+    /* Slider Section Css END */
+    /* About Us Section Css Start  */
+    
+    .aboutus {
+        /*	margin-top: 100px;*/
+        background-color: aliceblue;
+        height: 1450px;
+    }
+    
+    .aboutusimage img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        margin-top: 100px;
+    }
+    
+    .col-md-7.rightsideparagraph {
+        margin-top: 130px;
+    }
+    
+    .Architektur {
+        color: #7D9685;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 25px;
+    }
+    
+    .TRIFFT {
+        font-size: 25px;
+    }
+    
+    .rightsideparagraph span {
+        font-size: 30pxz;
+        margin-left: 44px;
+    }
+    
+    .JuanPablo-button {
+        /*	border: none;*/
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: 2px solid #7D9685;
+        color: #7D9685;
+    }
+    
+    .VIRTUELLER {
+        margin-left: 100px;
+        font-size: 30px;
+    }
+    
+    .Ruhdaehg {
+        color: #7D9685;
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: 30px;
+        margin-left: 70px;
+    }
+    
+    .Neugierig-paragraph {
+        padding-right: 110px;
+    }
+    
+    .leftrightcontent {
+        margin-top: 100px;
+    }
+    
+    .topbox {
+        background-color: #F0F0F0;
+        width: 100%;
+        height: 65px;
+    }
+    
+    .toprightcontent img {
+        float: right;
+        width: 73px;
+        margin-top: -56px;
+        margin-right: 66px;
+    }
+    
+    .bottombox {
+        background-color: #7D9685;
+        width: 100%;
+        height: 65px;
+    }
+    
+    .FullImage {
+        margin-top: 30px;
+    }
+    
+    .topleftcontent {
+        margin-left: 70px;
+    }
+    
+    .cursiveVira {
+        font-size: 16px;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    
+    .bottombox i {
+        font-size: 25px;
+        padding: 20px;
+    }
+    /* About Us Section Css End  */
+    /* So Wird Section Css Start */
+    
+    .Heading-center {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .SO-WIRD {
+        margin-top: 400px;
+    }
+    
+    .Zum-button {
+        /*	border: none;*/
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: 2px solid #7D9685;
+        color: #7D9685;
+    }
+    
+    .imagesection1 {
+        margin-top: 90px;
+    }
+    
+    .imagesection1 img {
+        object-fit: cover;
+        width: 100%;
+        height: 88%;
+    }
+    
+    .iconsSection {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contentSection {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .righticon i {
+        color: #9C7C39;
+    }
+    
+    .greenBoxWrap {
+        background-color: #7D9685;
+    }
+    
+    .greenBoxWrap .counterIcon i {
+        font-size: 35px;
+    }
+    
+    .greenBoxWrap .count {
+        font-size: 80px;
+        font-weight: 100;
+        line-height: normal;
+    }
+    
+    .counterText {
+        color: antiquewhite;
+        font-size: 12px;
+    }
+    
+    .greenBoxWrap .count,
+    .greenBoxWrap .counterText {
+        width: 100%;
+    }
+    /*::before {
+color: #9C7C39;
+}*/
+    
+    .iconRightSideParagraph {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-top: -5px;
+    }
+    
+    .Concept {
+        margin-left: -20px;
+    }
+    
+    .First i {
+        color: #9c7c39;
+    }
+    
+    .OPNV {
+        margin-left: -20px;
+    }
+    
+    .First {
+        font-size: 30px;
+    }
+    
+    .OPNV1 {
+        margin-left: -20px;
+    }
+    
+    .SecondTrainIcon {
+        font-size: 30px;
+    }
+    
+    .SecondTrainIcon i {
+        color: #9c7c39;
+    }
+    
+    .Train {
+        font-size: 30px;
+    }
+    
+    .Train1 {
+        margin-left: -20px;
+    }
+    
+    .Train i {
+        color: #9c7c39;
+    }
+    
+    .ForthTrainIcon {
+        font-size: 30px;
+    }
+    
+    .OPNV2 {
+        margin-left: -20px;
+    }
+    
+    .ForthTrainIcon i {
+        color: #9c7c39;
+    }
+    
+    .FindenSection {
+        background-color: #0D1D41;
+        margin-top: 80px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .ForntText {
+        font-size: 40px;
+        margin-top: 30px;
+        color: white;
+    }
+    
+    .FINDEN span {
+        color: #7D9685;
+        font-size: 40px;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    
+    .MapImage img {
+        margin-top: 80px;
+        width: 100%;
+    }
+    
+    .TextContent {
+        margin-top: 80px;
+        color: white;
+    }
+    
+    .bottomSection {
+        padding-bottom: 100px;
+    }
+    
+    .UNSER {
+        font-size: 35px;
+    }
+    
+    .WACHST {
+        margin-left: -15px;
+        color: #7D9685;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    
+    .unmittelbar {
+        font-size: 12px;
+    }
+    
+    .Zur-Umgebungsbeschreibung-button {
+        background-color: #0D1D41;
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: 2px solid #7D9685;
+        color: #7D9685;
+    }
+    
+    .Zur-Wohnungsübersicht-button {
+        background-color: #0D1D41;
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: 2px solid #7D9685;
+        color: #7D9685;
+        margin-left: 20px;
+    }
+    
+    .Bauabschnitt {
+        border-radius: 25px;
+        margin-top: 200px;
+        margin-left: -615px;
+    }
+    /*.DOMBLICK{
+}*/
+    /* Tab Section Css Start */
+    
+    .TabSection {
+        margin-top: 100px;
+    }
+    
+    .Baufortschritt {
+        margin-top: 140px;
+        font-size: 30px;
+        color: #7D9685;
+    }
+    
+    .Dieparagraph {
+        margin-top: 140px;
+    }
+    
+    .BILDERN {
+        margin-left: 65px;
+    }
+    
+    .basketballimage img {
+        margin-top: 80px;
+    }
+    
+    .col-md-6.Beratung-paragraph {
+        margin-top: 80px;
+    }
+    
+    .Persönlich-paragraph {
+        margin-top: 30px;
+    }
+    
+    .VOR {
+        margin-left: 40px;
+    }
+    
+    .Persönlich-paragraph {
+        /*	margin-left: 140px;*/
+    }
+    
+    .WhiteBox {
+        margin-top: 90px;
+        background-color: whitesmoke;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .BoxCentent {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    
+    .Total {
+        margin-left: 120px;
+    }
+    /* Tab Section Css End */
+    
+    .Beratung {
+        color: #7D9685;
+        font-size: 30px;
+        font-family: 'Cedarville Cursive', cursive;
+    }
+    
+    .Dieparagraph {
+        font-size: 18px;
+    }
+    
+    .sliderimage {}
+    
+    .carousel-item>div {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .graybackground {
+        background-color: #83A28F;
+        /*    margin-top: 80px;*/
+        width: 100%;
+        height: auto;
+    }
+    
+    .KONTAKT {
+        font-size: 30px;
+    }
+    /*.border-right{
+	border-right: 5px solid green;
+}*/
+    /* Header Section Media Query Start  */
+    
+    @media only screen and (max-width: 991px) {
+        .main {
+            float: right;
+        }
+    }
+    /* Header Section Media Query End */
+    /* Viva Colonia Section Media Query Start  */
+    
+    @media only screen and (max-width: 767px) {
+        .TextHeading h1 {
+            margin-left: -373px;
+        }
+    }
+    
+    @media only screen and (max-width: 552px) {
+        .TextHeading h1 {
+            margin-left: -144px;
+        }
+    }
+    /* Viva Colonia Section Media Query End */
+    
+    @media only screen and (max-width: 767px) {
+        .aboutus {
+            height: 1970px;
+        }
+    }
+    
+    @media only screen and (max-width: 555px) {
+        .FINDEN span {
+            font-size: 20px;
+        }
+    }
+    
+    div#nav-tab {
+        border: none;
+        margin-top: 60px;
+        justify-content: center;
+    }
+    
+    div#nav-tabContent {
+        border: none;
+        margin-top: 40px;
+    }
+    
+    button#nav-home-tab {
+        color: green;
+        border: none;
+    }
+    
+    button#nav-profile-tab {
+        border: none;
+        color: green;
+    }
+    
+    button#nav-contact-tab {
+        border: none;
+        color: green;
+    }
+    
+    .jdFormSection {
+        margin-top: 80px;
+        background-color: #f3e7e7;
+    }
+    
+    .jdFormSection h2 {
+        font-size: 35px;
+    }
+    
+    .jdCursive {
+        font-family: 'Cedarville Cursive', cursive;
+        color: #7D9685;
+    }
+    
+    .jdFormSection .bhmsWhiteBox {
+        padding: 30px;
+        color: #000;
+        padding: 30px;
+        color: #000;
+        background-color: #fff;
+        border-top: 3px solid #000;
+        border-radius: 2px;
+        margin: 50px 0;
+    }
+    
+    .bhmsWhiteBox table th {
+        width: 110px;
+    }
+    
+    .anmbutton {
+        /* background-color: #0D1D41; */
+        margin-top: 30px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 20px;
+        border: 2px solid #7D9685;
+        /* color: #7D9685; */
+    }
+    
+    .lorem {
+        margin-top: 50px;
+    }
+    
+    .formBox {
+        width: 500px;
+        padding: 30px;
+        color: #000;
+        padding: 30px;
+        color: #000;
+        background-color: #fff;
+        border-top: 3px solid #000;
+        border-radius: 2px;
+        margin: 50px 0;
+    }

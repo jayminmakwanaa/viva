@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Viva Agrippina Project
+    </title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+
+            var counters = $(".count");
+            var countersQuantity = counters.length;
+            var counter = [];
+
+            for (i = 0; i < countersQuantity; i++) {
+                counter[i] = parseInt(counters[i].innerHTML);
+            }
+
+            var count = function(start, value, id) {
+                var localStart = start;
+                setInterval(function() {
+                    if (localStart < value) {
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }, 40);
+            }
+
+            for (j = 0; j < countersQuantity; j++) {
+                count(0, counter[j], j);
+            }
+        });
+    </script>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+    </script>
+
+    <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(cityName).style.display = "block";
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- <div class="container-fluid"> -->
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                        <div class="collapse navbar-collapse firstmenu" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#" style="color:darkblue;">VIVA AGRIPPINA</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">UMGEBUNG</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        EIGENTUMSWOHNUNGEN
+                                        </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <img src="assets/images/logo.svg" class="techasthalogo">
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">BAUFORTSCHRITT</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">UBER UNS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">KONTAKT</a>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar section end -->
+    <!-- Header Section Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <img src="assets/images/villa.webp" class="img-fluid headerimage position-relative">
+            </div>
+            <div class="circlebox position-absolute rounded-circle" style="border-radius: 50%; background-color: white; width: 250px; height: 250px; left: 50%; transform: translateX(-50%);">
+                <h1>Vira <img src="assets/images/logo.svg" style="width:50px; object-fit: cover;"> </h1>
+                <span>A G R I P P I N A</span>
+                <h6>LEBEN ZWISCHEN RHEIN UND FLORA</h6>
+                <button onclick="playVid()" type="button" class="playvideo"> JETZT VIDEO ANSEHEN &nbsp; <i class="fa">&#xf144;</i>
+                    </button>
+                <video id="myVideo" width="320" height="176">
+                        <source src="https://youtu.be/07d2dXHYb94" type="video/mp4">
+                        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                        Your browser does not support HTML5 video.
+                    </video>
+            </div>
+            <!-- <button>Jetzt Video Anssehne</button> -->
+            <div class="row position-relative" style="top: -20px;">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-4 pr-0 d-flex">
+                            <img src="assets/images/images.jpeg" class="w-100">
+                        </div>
+                        <div class="col-md-8 brownBoxWrap">
+                            <div class="brownBoxText"> <b>Vertriebsstart Baua bschnitt 2!</b><br> Wir freuen uns,Ihnen neue Einheiten zum zweiten Bauabschnitt zur Verfügung zu stellen!<br>
+                                <span class="Mehr">Mehr lesen</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Section End -->
+    <!-- Viva Colonia Section Start -->
+    <div class="Colonia">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center TextHeading">
+                    <h1>VIVA<br> COLONIA.
+                        <br>
+                        <span class="viva">Viva</span><br> AGRIPPINA.
+                    </h1>
+                </div>
+                <div class="col-md-6">
+                    <div>Köln lebt in seinen Stadtviertein, liebevoll .Veedel" genannt. Hier schlägt das Herz der Stadt. Hier trifft man sich, geht aus, kauft ein.
+                    </div>
+                    <br>
+                    <div>Hier ist die kölsche Seele zuhause, das Wir-Gefühl - all das, was die Domstadt ausmacht, findet im neuen Wohnvietel eine Heimat. Hier entsteht nicht einfach eine Immobilie - hier wird ein neues Stück Köln geboren.
+                    </div>
+                    <br>
+                    <div>Und deshalb geben wir dem Wohnviertel den kölschesten aller Namen benannt nach der Kölner Stadtmutter Kaiserin Agrippina.
+                    </div>
+                    <button class="Umgebung-button">Umgebung erkunden</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Images Section Start -->
+    <div class="imagesection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/beach-sea-18378306.jpg">
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/beach-1751455__340.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="assets/images/tree-736885_960_720.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/woman-570883_960_720.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Images Section End -->
+    <!-- Slider Section Start -->
+    <div class="parent">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/beach-sea-18378306.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/beach-1751455__340.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/tree-736885_960_720.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </div>
+    <div class="greenbackground">
+        <div class="countcenter">
+            <div class="container-fluid greenBoxWrap">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-2 text-center">
+                                <div class="counterIcon"><i class="fa-solid fa-key firsticon"></i></div>
+                                <div class="count">286</div>
+                                <div class="counterText">Wohnungen</div>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="counterIcon"><i class="fa-solid fa-key firsticon"></i></div>
+                                <div class="count">286</div>
+                                <div class="counterText">Wohnungen</div>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="counterIcon"><i class="fa-solid fa-key firsticon"></i></div>
+                                <div class="count">286</div>
+                                <div class="counterText">Wohnungen</div>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="counterIcon"><i class="fa-solid fa-key firsticon"></i></div>
+                                <div class="count">286</div>
+                                <div class="counterText">Wohnungen</div>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <div class="counterIcon"><i class="fa-solid fa-key firsticon"></i></div>
+                                <div class="count">286</div>
+                                <div class="counterText">Wohnungen</div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section Start -->
+    <div class="aboutus">
+        <div class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="aboutusimage">
+                            <img src="assets/images/business-team-looking.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7 rightsideparagraph">
+                        <p class="TRIFFT"><span class="Architektur">Architektur</span> TRIFFT <br> <span style="margin-left: 78px;">LEIDENSCHAFT</span></p>
+                        <div>Was Architekt Juan Pablo Molestina anpackt, vollendet er mit Leidenschaft. Seine Projekte zeichnen sich durch eine sorgfaltige Integration in das städtische Umfeld und eine hohe Funktionalität aus, die den Bedürfnissen und Anforderungen
+                            der Bewohner gerecht wird. Molestina hat eine Vorliebe für zeitgenössische Architektur und setzt dabei auf eine Kombination aus modernen Materialien und klaren Linien.<br><br> 1955 in Quito, Ecuador geboren, elangte er 1982
+                            seinen Abschluss als Master of Architecture am bekannten MIT in Cambridge, Massachusetts.<br><br> In knapp 40 Jahren erfolgreicher internationaler Tätigkeit als Architekt, Gründer, Beirat, Lehrbauftragter, Professor, Dekan
+                            und Vorstand hat Molestina eine außerordentliche Menge an Erfahrung und Referenzen aufgebaut, die seine Passion für Architektur und Lebens-Raum" bis heute antreibt.
+                        </div>
+                        <button class="JuanPablo-button">Video: Juan Pablo Molestina im Interview</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leftrightcontent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 topppp">
+                        <p><span class="VIRTUELLER">VIRTUELLER</span><br>
+                            <span class="Ruhdaehg">Ruhdaehg</span>
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <p class="Neugierig-paragraph">Neugierig? Machen Sie sich selbst ein Bild von Molestinas Vision in unserem virtuellem Rundgang. Über die Foto-Icons erreichen Sie anschauliche Aussichtspunkte!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="FullImage">
+            <div class="abc">
+                <div class="container">
+                    <div class="topbox">
+                        <div class="topleftcontent">
+                            <p style="margin-top: 10px;"><span class="cursiveVira">Vira</span><br>A G R I P P I N A</p>
+                        </div>
+                        <div class="toprightcontent">
+                            <img src="assets/images/Square-Logo-Designs-That-Keep-It-Simple-Square-Logos-That-Highlight-Structure-780x520.jpg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="assets/images/wp1844495.jpg" class="w-100" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <div class="bottombox d-flex justify-content-center">
+                        <i class="fa-solid fa-square-parking"></i>&nbsp;
+                        <i class="fa-solid fa-square-parking"></i>&nbsp;
+                        <i class="fa-solid fa-square-parking"></i>&nbsp;
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+    <!-- So Wird Section Start -->
+    <div class="SO-WIRD">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 Heading-center">
+                    <div>SO WIRD <br> AUS EINEM HAUS <br> <span style="margin-left:-20px; font-family: 'Cedarville Cursive', cursive; color: #7D9685;">THR</span> <br> ZUHAUSE </div>
+                </div>
+                <div class="col-md-6">
+                    <div>Offen, hell, freundlich und natürlich barrierefrei - die hochwertige Ausstattung hat nur ein Ziel: Dass Sie sich zuhause rundum wohifüh len.
+                    </div>
+                    <button class="Zum-button"> Zum Wohnungskonfigurator</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imagesection1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="assets/images/people-1979261__340.jpg">
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/istockphoto-1354898581-170667a.jpg">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <img src="assets/images/istockphoto-1272687005-612x612.jpg">
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/pexels-photo-1438081.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="FirstContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="col-md-6">
+                        <div class="FirstTrainIcon">
+                            <div class="First">
+                                <i class="fa-solid fa-train"></i>
+                                <div class="OPNV">OPNV</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 Concept">
+                            <div class="SecondTrainIcon">
+                                <i class="fa-solid fa-train"></i>
+                                <div class="OPNV1">OPNV</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ThirdTrainIcon">
+                        <div class="col-md-2">
+                            <div class="Train">
+                                <i class="fa-solid fa-train"></i>
+                                <div class="Train1">Train</div>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="ForthTrainIcon">
+                                <i class="fa-solid fa-train"></i>
+                                <div class="OPNV2">OPNV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Vielfältige Eigentumswohnungen, vom 1-ZimmerAppartment über 2-6 Zimmer Wohnungen bis zum Penthouse
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Lichtdurchflutete, offene Grundrisse
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Balkon, Loggia, Garten oder Terrasse
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph"> Hochwertige Materialien
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Barrierefreie, bodengleiche Duschen
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Moderne Badezimmer
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Tiefgarage mit direktem Zugang zum Haus
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph">Ausreichend Fahrrad- und PKW-Stellplätze in der Tiefgarage
+                        </p>
+                    </div>
+                    <div class="d-flex righticon">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="iconRightSideParagraph"> Alle PKW-Stellplätze können optional mit einer Elektro-Ladestation Wallbox ausgerüstet werden
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- So Wird Section End -->
+
+    <!-- Finden Section Start -->
+    <div class="FindenSection">
+        <div class="container">
+            <div class="background">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <div class="ForntText">
+                        <div class="FINDEN">FINDEN SIE HIER<br> IHRE NEUE<br>
+                            <span>EIGENTUMSWOHNUNG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="MapImage position-relative">
+                    <img src="assets/images/viva_agrippina_bau_uebersicht-1440x0-c-default.jpg" class="img-fluid">
+                    <button class="Bauabschnitt position-absolute">Bauabschnitt 2</button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="border-right" style="border-right: 3px solid red; z-index: -1;">123</div>
+
+
+        <div class="TextContent">
+            <div class="container">
+                <div class="bottomSection">
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <div class="UNSER">UNSER<br>VEEDEL<br><span class="WACHST">WACHST</span><br>WEITER
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="unmittelbar">Viva Agrippina entsteht im Gerichts-Viertel, unmittelbar neben dem Agnesviertel. Zwischen Zoo, Lentpark, Bastei und Rhein liegt eine der charmantesten Wohngegenden der Stadt. Hier grenzen historische Villen und Altbauten an
+                                junge Bars und angesagte Restaurants, Parks und viel Grün an lebendige Einkaufsstraßen. Rund um die Kirche Sankt Agnes, im Herzen des Agnesviertels an der Neusser Straße, treffen sich Jung und Alt, Student und Senior, Zugezogene
+                                und Urkölner.<br><br> Mit Viva Agrippina sind Sie mitten im Leben: Alles, was das Viertel so charmant macht, liegt direkt vor der Tur. Und natürlich alles für den täglichen Bedarf: von Supermärkten über Schulen, Arzte und
+                                mehr. Gleichzeitig lockt auf der anderen Seite das Rheinufer mit weiten Blicken zum grünen Rheinpark.
+                            </div>
+
+                            <button class="Zur-Umgebungsbeschreibung-button"> Zur Umgebungsbeschreibung
+                        </button>
+                            <button class=" Zur-Wohnungsübersicht-button"> Zur Wohnungsübersicht</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Finden Section End -->
+
+
+
+
+
+
+
+
+    <!-- Tab Section Start -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 d-flex justify-content-center">
+                <div class="Baufortschritt">Baufortschritt<br><span class="BILDERN">IN BILDERN</span></div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="Dieparagraph">Die Bauarbeiten zu Viva Agrippina sind im vollem Gange. An dieser Stele zeigen wir Ihnen, wie wir Ihre Wohnträume wahr werden lassen.
+                </div>
+            </div>
+
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">OKTOBER 2022</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" style="color:green;">SEPTEMBER 2022</button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false" style="color:green;">AUGUST 2022</button>
+
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="parent">
+                        <div id="carouselExampleControlsbhms" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/beach-sea-18378306.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/beach-1751455__340.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tree-736885_960_720.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsbhms" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsbhms" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="parent">
+                        <div id="carouselExampleControlsbhmss" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/beach-sea-18378306.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/beach-1751455__340.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tree-736885_960_720.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsbhmss" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsbhmss" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <div class="parent">
+                        <div id="carouselExampleControlsbhmsss" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/beach-sea-18378306.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/beach-1751455__340.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tree-736885_960_720.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsbhmsss" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsbhmsss" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Form Image Section Start -->
+    <div class="Form-Image jdFormSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pe-5">
+                    <img src="assets/images/pexels-photo-6076400.jpeg" class="w-100" style="height: auto;">
+                </div>
+                <div class="col-md-6 ps-5">
+                    <h2>Beratung <br><span class="jdCursive">VOR ORT</span></h2>
+                    <p>Persönlich und Nah: Wir empfangen und beraten Sie gerne in unserem Viva Agrippina Showroom vor Ort. Unser Vertriebsteam freut sich von Ihnen zu hören.</p>
+                    <div class="bhmsWhiteBox d-flex">
+                        <table>
+                            <tr>
+                                <th>WANN:</th>
+                                <td class="samstags"><b style="margin-top: 40px;">Samstags, von 12:00 13:00 Uhr</b> oder nach individueller Vereinbarung
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ORT:</th>
+                                <td>Riehler Straße 88, 50668 Köin
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ANMELDUNG:</th>
+                                <td>+49 (0) 221 4737.700
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <button class="anmbutton">
+                        ANMELDUNG
+                    </button>
+                    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ab itaque eveniet voluptates autem deleniti inventore excepturi libero vero, tempora earum iusto quaerat ipsam reiciendis obcaecati ipsa. Cumque, illo tempora!</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Image Section End -->
+
+
+
+    <!-- Last one footer Section Start -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="graybackground">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="KONTAKT">IHR KONTAKT <br>INS NEUE<br><span class="euhause">euhause</span></div>
+                </div>
+                <div class="circleimage d-flex" style=" margin-left: 120px; margin-top: 60px;">
+                    <img src="assets/images/sebastian_flach.jpg" class="rounded-circle" style="height:150px;">
+
+                    <div class="partner" style="color:whitesmoke; margin-left: 40px; margin-top: 20px;">
+                        <div>
+                            <b>Andreas Chulek</b>
+                        </div>
+                        <div>S Immobilienpartner</div>
+                        <div>02214737-700</div>
+                        <div>koeln@s-immobilienpartner.de</div>
+                    </div>
+                </div>
+
+                <div class="circleimage d-flex" style=" margin-left: 120px; margin-top: 60px;">
+                    <img src="assets/images/sebastian_flach.jpg" class="rounded-circle" style="height:150px;">
+
+                    <div class="partner" style="color:whitesmoke; margin-left: 40px; margin-top: 20px;">
+                        <div>
+                            <b>Elke Schavli</b></div>
+                        <div>S Immobilienpartner</div>
+                        <div>02214737-700</div>
+                        <div>koeln@s-immobilienpartner.de</div>
+                    </div>
+                </div>
+
+                <div>
+
+                </div>
+
+                <div class="formBox d-flex">
+                    <form>
+                        <label for="fname">Name*</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Telefone*</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br>
+
+                        <label for="lname">Email*</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="conainer-fluid">
+        <div class="row">
+            <div class="graybackground">
+                <div class="col-md-6  justify-content-center">
+                    <div class="KONTAKT">IHR KONTAKT <br>INS NEUE<br><span class="euhause">euhause</span></div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="circleimage d-flex" style=" margin-left: 120px; margin-top: 60px;">
+                        <img src="assets/images/sebastian_flach.jpg" class="rounded-circle" style="height:150px;">
+
+                        <div class="partner" style="color:whitesmoke; margin-left: 40px; margin-top: 20px;">
+                            <div>
+                                <b>Andreas Chulek</b>
+                            </div>
+                            <div>S Immobilienpartner</div>
+                            <div>02214737-700</div>
+                            <div>koeln@s-immobilienpartner.de</div>
+                        </div>
+                    </div>
+
+                    <div class="circleimage" style=" margin-left: 120px; margin-top: 60px;">
+                        <img src="assets/images/sebastian_flach.jpg" class="rounded-circle" style="height:150px;">
+
+                        <div class="partner" style="color:whitesmoke; margin-left: 40px; margin-top: 20px;">
+                            <div>
+                                <b>Elke Schavli</b></div>
+                            <div>S Immobilienpartner</div>
+                            <div>02214737-700</div>
+                            <div>koeln@s-immobilienpartner.de</div>
+                        </div>
+                    </div>
+
+                    <div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="formBox">
+                        <form>
+                            <label for="fname">Name*</label><br>
+                            <input type="text" id="fname" name="fname" value="John"><br>
+                            <label for="lname">Telefone*</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe"><br>
+
+                            <label for="lname">Email*</label><br>
+                            <input type="text" id="lname" name="lname" value="Doe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</body>
+
+</html>
+
+</html>
